@@ -1,0 +1,8 @@
+<template name="main">
+	{{#if currentUser}}
+		{{> regnavbar}}
+	{{else}}
+		{{> homenavbar}}
+	{{/if}}
+	{{> yield}}
+</template>

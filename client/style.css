@@ -1,0 +1,70 @@
+/* http://devtacular.com/articles/bkonrad/how-to-style-an-application-like-facebook */
+body {
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;  
+}
+
+.btn {
+	background-color: #4169e1;
+	color: #FFF;
+}
+
+.btn:hover{
+	color: #FFF;
+}  
+
+
+/* HOME NAV BAR */
+
+.hnav {
+	background-color: #3b5998;
+	height: 75px;
+}
+
+.hnav h1 {
+	color: #FFF;
+	float: left;
+	height: 100%;
+	font-weight: bold;
+}
+
+.hnav span {
+	float: right;
+	line-height: 75px;
+}
+
+/* SIGN UP */
+
+.signup h1 {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.signup form {
+	padding-top: 10px;
+}
+
+.signup form button {
+	margin-top: 20px;
+}
+
+/* LOG IN */
+
+.login form {
+	color: #FFF;
+	padding-right: 20px;
+}
+
+/* REGULAR NAV BAR */
+.rnav {
+	background-color: #3b5998;
+	height: 50px;
+}
+
+.rnav img {
+	width: 50px;
+}
+
+.rnav .btn {
+	height: 50px;
+	float: right;
+}
