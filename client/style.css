@@ -12,7 +12,6 @@ body {
 	color: #FFF;
 }  
 
-
 /* HOME NAV BAR */
 
 .hnav {
@@ -60,11 +59,49 @@ body {
 	height: 50px;
 }
 
-.rnav img {
-	width: 50px;
+.rnav .row {
+	float: right;
+	line-height: 50px;
+}
+
+.rnav .miniprofileimage {
+	width: 20px;
 }
 
 .rnav .btn {
-	height: 50px;
 	float: right;
+	height: 50px;
 }
+
+.rnav p {
+	color: #FFF;
+	font-size: 30px;
+	line-height: 50px;
+	float: left;
+}
+
+.rnav a {
+	color: #FFF;
+	font-size: 14px;
+	line-height: 50px;
+}
+
+.rnav a:hover{
+	color: #FFF;
+}
+
+/* NEWSFEED */
+.newsfeed {
+	padding-top: 40px;
+}
+
+.newsfeed a {
+	font-size: 14px;
+	color: #000;
+	line-height: 25px;
+}
+
+.newsfeed .smallprofileimage {
+	width: 20px;
+}
+

@@ -1,10 +1,25 @@
 <template name="regnavbar">
 	<div class="rnav">
 		<div class="container">
-			<form class="login form-inline">
-				<img class="logo" src="http://www.acquisio.com/wp-content/uploads/2012/02/fb-scribble.jpg">
-				<button href="{{pathFor route='signup'}}" class="btn logout">Logout</button>
-			</form>
+			<p>f</p>
+			<div class="row">
+				<div class="col-md-4">			
+						<div class="row">
+							<div class="col-md-1">
+								<a href="{{pathFor route='profile'}}"><img src="images/default-profile.png" class="miniprofileimage"></a>
+							</div>
+							<div class="col-md-5">
+								<a href="{{pathFor route='profile'}}" class="name">{{name}}</a>
+							</div>
+						</div>
+				</div>
+				<div class="col-md-4">
+					<a href="{{pathFor route='newsfeed'}}">Home</a>
+				</div>
+				<div class="col-md-4">
+					<button href="{{pathFor route='signup'}}" class="btn logout">Logout</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>

@@ -3,14 +3,16 @@ Template.signup.events({
 		event.preventDefault();
 		var firstname = $('[name=firstname]').val();
 		var lastname = $('[name=lastname]').val();
-        var email = $('[name=email]').val();
-        var password = $('[name=password]').val();
+        var email = $('#signupEmail').val();
+        var password = $('#signupPassword').val();
         
         Accounts.createUser({
-        	firstname: firstname,
-        	lastname: lastname,
             email: email,
-            password: password
+            password: password,
+            profile: {
+                firstname: firstname,
+                lastname: lastname
+            }
         }, function(error){
             if(error){
                 console.log(error.reason); // Output error if registration fails
