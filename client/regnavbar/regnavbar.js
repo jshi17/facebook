@@ -1,6 +1,11 @@
 Template.regnavbar.helpers({
+	// Patrick helped me with this
 	'name': function(){
-		return Meteor.user().profile.firstname;
+		try {
+			return Meteor.user().profile.firstname;
+		} catch (err) {
+			// ignore safely, page hasn't started
+		}
 	}
 });
 

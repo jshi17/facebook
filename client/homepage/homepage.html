@@ -1,0 +1,7 @@
+<template name="homepage">
+	{{#if currentUser}}
+		{{newsfeed}}
+	{{else}}
+		{{> signup}}
+	{{/if}}
+</template>

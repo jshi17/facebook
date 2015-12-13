@@ -1,0 +1,11 @@
+<!--done with help of http://meteorpad.com/pad/PDdgSnR4PZz9X3hWG/Search-->
+<template name="searchbar">
+	<div class="searchbar">
+		<input id="search" name="search" placeholder="Search people">
+		<ul>
+			{{#each user}}
+				<li>{{fullname}}</li>
+			{{/each}}
+		</ul>
+	</div>
+</template>

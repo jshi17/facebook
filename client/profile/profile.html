@@ -1,7 +1,16 @@
 <template name="profile">
 	<div class="profile">
-		<div class="contaier">
+		{{> regnavbar}}
+		<div class="container">
 			{{> profilephotos}}
+			<div class="row">
+				<div class="col-md-4">
+					{{> profilenavbar}}
+				</div>
+				<div class="col-md-8">
+					{{> yield}}
+				</div>
+			</div>
 		</div>
 	</div>
 </template>

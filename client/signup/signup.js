@@ -3,6 +3,7 @@ Template.signup.events({
 		event.preventDefault();
 		var firstname = $('[name=firstname]').val();
 		var lastname = $('[name=lastname]').val();
+        var fullname = firstname + " " + lastname;
         var email = $('#signupEmail').val();
         var password = $('#signupPassword').val();
         
@@ -11,7 +12,8 @@ Template.signup.events({
             password: password,
             profile: {
                 firstname: firstname,
-                lastname: lastname
+                lastname: lastname,
+                fullname: fullname
             }
         }, function(error){
             if(error){

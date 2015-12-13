@@ -12,6 +12,20 @@ body {
 	color: #FFF;
 }  
 
+/* http://stackoverflow.com/questions/572768/styling-an-input-type-file-button */
+.image-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #FFF;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    display: none;
+}
+
 /* HOME NAV BAR */
 
 .hnav {
@@ -32,6 +46,11 @@ body {
 }
 
 /* SIGN UP */
+
+.signup {
+	padding-left: 30px;
+	float: left;
+}
 
 .signup h1 {
 	margin-top: 40px;
@@ -54,14 +73,14 @@ body {
 }
 
 /* REGULAR NAV BAR */
+
 .rnav {
 	background-color: #3b5998;
 	height: 50px;
 }
 
 .rnav .row {
-	float: right;
-	line-height: 50px;
+  line-height: 50px;
 }
 
 .rnav .miniprofilephoto {
@@ -90,7 +109,20 @@ body {
 	color: #FFF;
 }
 
+.rnav .col-md-7 {
+	padding-left: 0px;
+}
+
+/* SEARCH BAR */
+
+.searchbar input {
+  line-height: 25px;
+  width: 85%;
+}
+
+
 /* NEWSFEED */
+
 .newsfeed {
 	padding-top: 40px;
 }
@@ -108,12 +140,12 @@ body {
 /* PROFILE */
 
 .profile {
-
+	padding-bottom: 30px;
 }
 
 .profilephotos .panel {
 	margin-top: 30px;
-	border: 0;
+	border: none;
 }
 
 .profilephotos .image-style {
@@ -146,5 +178,70 @@ body {
 	font-size: 30px;
 }
 
+.profile ul li {
+  display: block;
+}
 
+.profile ul li .btn {
+  width: 100%;
+  background-color: #DCDCDC;
+  padding: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #D3D3D3;
+}
 
+.profile ul li a {
+  color: #000;
+}
+
+.profile ul li .btn:hover {
+  background-color: #D3D3D3;
+  color: #000;
+  text-decoration: none;
+}
+
+/* STATUS INPUT */
+
+.statusinput textarea {
+  width: 100%;
+  max-width: 100%;
+  resize: none;
+  border: none;
+}
+
+.statusinput .align-right {
+	text-align: right;
+}
+
+.statusinput ul {
+  padding: 0;
+}
+
+.statusinput ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.statusinput img {
+  width: 150px;
+  height: 150px;
+}
+
+/* MY STATUS LIST */
+
+.mystatuslist .panel-heading {
+	height: 40px;
+}
+
+.mystatuslist .delete {
+	vertical-align: center;
+	float: right;
+}
+
+/* SETTINGS */
+
+.settings .row {
+	padding-bottom: 20px;
+}

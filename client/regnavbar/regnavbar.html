@@ -1,23 +1,36 @@
 <template name="regnavbar">
 	<div class="rnav">
 		<div class="container">
-			<p>f</p>
 			<div class="row">
-				<div class="col-md-4">			
-						<div class="row">
-							<div class="col-md-1">
-								<a href="{{pathFor route='profile'}}"><img src="images/default-profile.png" class="miniprofilephoto"></a>
-							</div>
-							<div class="col-md-5">
-								<a href="{{pathFor route='profile'}}" class="name">{{name}}</a>
-							</div>
+				<div class="col-md-1">
+					<p>f</p>
+				</div>
+
+				<div class="col-md-7">
+					{{> searchbar}}
+				</div>
+
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-4">			
+								<div class="row">
+									<div class="col-md-1">
+										<a href="{{pathFor route='profile'}}"><img src="/images/default-profile.png" class="miniprofilephoto"></a>
+									</div>
+									<div class="col-md-5">
+										<a href="{{pathFor route='profile'}}" class="name">{{name}}</a>
+									</div>
+								</div>
 						</div>
-				</div>
-				<div class="col-md-4">
-					<a href="{{pathFor route='newsfeed'}}">Home</a>
-				</div>
-				<div class="col-md-4">
-					<button href="{{pathFor route='signup'}}" class="btn logout">Logout</button>
+
+						<div class="col-md-4">
+							<a href="{{pathFor route='newsfeed'}}">Home</a>
+						</div>
+
+						<div class="col-md-4">
+							<button href="{{pathFor route='homepage'}}" class="btn logout">Logout</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

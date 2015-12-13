@@ -1,0 +1,14 @@
+<template name="statuslist">
+	<div class="mystatuslist">
+		{{#each status}}
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					{{ownername}}
+				</div>
+				<div class="panel-body">
+					<p>{{text}}</p>
+				</div>
+			</div>
+		{{/each}}
+	</div>
+</template>

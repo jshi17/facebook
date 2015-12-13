@@ -1,0 +1,38 @@
+<template name="statusinput">
+	<div class="statusinput">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<form>
+					<textarea rows="5" name="status" placeholder="Say something"></textarea>
+					<ul>
+						{{#each images}}
+							{{#if isOwner}}
+								<li>
+							        <a href="{{this.url}}" target="_blank">
+							        	<img src="{{this.url}}" class="thumbnail"/>
+							        </a>
+							    </li>
+							{{/if}}
+					    {{/each}}
+					</ul>
+					<div class="row">
+						<div class="col-md-6">
+							<!--http://stackoverflow.com/questions/572768/styling-an-input-type-file-button-->
+							<ul>
+								<li>
+									{{> imageupload}}
+								</li>
+								<!--<li>
+									<button class="image-upload">Empty</button>
+								</li> -->
+							</ul>
+						</div>
+						<div class="col-md-6 align-right">
+							<button type="submit" class="btn">Post</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</template>

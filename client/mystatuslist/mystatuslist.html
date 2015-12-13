@@ -1,0 +1,17 @@
+<template name="mystatuslist">
+	<div class="mystatuslist">
+		{{#each status}}
+			{{#if currentuser}}
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						{{ownername}}
+						<button class="delete">&times;</button>
+					</div>
+					<div class="panel-body">
+						<p>{{text}}</p>
+					</div>
+				</div>
+			{{/if}}
+		{{/each}}
+	</div>
+</template>
