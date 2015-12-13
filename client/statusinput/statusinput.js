@@ -4,23 +4,22 @@ Template.statusinput.events({
 
 		var text = $('[name=status]').val();
 
-		// Insert status into collection
-		StatusList.insert({
-			text: text,
-			owner: Meteor.userId(),
-			createdAt: new Date(),
-		});
+		Meteor.call('postStatus', text, function(err) {
+			if (err != null) {
+				// raise a notification or something
+			}
+		})
 
-		$('[name=status]').text.value = "";
+
+		$('[name="status"]').text.value = "";
 	}
 });
 
 Template.statusinput.helpers({
 	images: function(){
-		return Images.find();
-	},
-
-	isOwner: function(){
-		return Meteor.userId() == Meteor.userId();
+		return Images.find({
+			owner: Meteor.userId(),
+			post: 'temporary'
+		});
 	}
 });

@@ -6,14 +6,12 @@
 					<textarea rows="5" name="status" placeholder="Say something"></textarea>
 					<ul>
 						{{#each images}}
-							{{#if isOwner}}
-								<li>
-							        <a href="{{this.url}}" target="_blank">
-							        	<img src="{{this.url}}" class="thumbnail"/>
-							        </a>
-							    </li>
-							{{/if}}
-					    {{/each}}
+						<li>
+							<a href="{{this.url}}" target="_blank">
+								<img src="{{this.url}}" class="thumbnail"/>
+							</a>
+						</li>
+						{{/each}}
 					</ul>
 					<div class="row">
 						<div class="col-md-6">
