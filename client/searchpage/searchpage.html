@@ -1,0 +1,37 @@
+<template name="searchpage">
+	<div class="searchpage">
+		<div class="container">
+			<h1>Search results for "{{text}}":</h1>
+			<ul>
+				{{#each user}}
+					<li>
+						<div class="row">
+							<div class="col-md-3">
+								{{fullname}}
+							</div>
+							<div class="col-md-3">
+								{{#if me}}
+										<p href="#" class="btn btn-default btn-friend">This is you!</p>
+								{{else}}
+									{{#if notfriend}}
+										<button class="btn btn-default btn-friend" id="add">+ Add Friend</button>
+									{{else}}
+										{{#if requestunresponded}}
+											<button class="btn btn-default btn-friend" id="respond">Respond to Friend Request</button>
+										{{else}}
+											{{#if requestaccepted}}
+												<p href="#" class="btn btn-default btn-friend">&#x2713; Friends</p>
+											{{else}}
+												<p href="#" class="btn btn-default btn-friend">Friend Request Sent</p>
+											{{/if}}
+										{{/if}}
+									{{/if}}
+								{{/if}}
+							</div>
+						</div>
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</template>

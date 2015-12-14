@@ -1,0 +1,37 @@
+<template name="friends">
+	<div class="friends">
+		<div>
+		{{#if norequests}}
+			<p>No friends or friend requests yet.</p>
+		{{else}}
+		<ul>
+			{{#each request}}
+			<li>
+				<div class="row">
+					<div class="col-md-6">
+						{{from}}
+					</div>
+
+					<div class="col-md-6">
+					{{#if friends}}
+						<p class="btn btn-default btn-friend">&#x2713; Friends</p>
+					{{else}}
+						<div class="row">
+							<div class="col-md-4">
+								<button class="btn btn-default btn-friend" id="accept">Accept</button>
+							</div>
+
+							<div class="col-md-4">
+								<button class="btn btn-default btn-friend" id="deny">Deny</button>
+							</div>
+						</div>
+					{{/if}}
+					</div>
+				</div>
+			</li>
+			{{/each}}
+		</ul>
+		{{/if}}
+		</div>
+	</div>
+</template>

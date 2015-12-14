@@ -7,6 +7,7 @@ bounceLoggedOut = function() {
 
 
 Meteor.methods({
+	// Patrick help
 	'postStatus': function(text) {
 		bounceLoggedOut();
 		check(text, String);

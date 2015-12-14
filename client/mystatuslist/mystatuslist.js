@@ -1,13 +1,13 @@
 Template.mystatuslist.helpers({
 	'status': function(){
-		return StatusList.find({}, {sort: {createdAt: -1}});
+		return StatusList.find({owner: this.id}, {sort: {createdAt: -1}});
 	},
 
 	'ownername': function(){
 		return Meteor.users.findOne({_id: this.owner}).profile.fullname;
 	},
 
-	'currentuser': function(){
+	'owned': function(){
 		return this.owner == Meteor.userId();
 	},
 

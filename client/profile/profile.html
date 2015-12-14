@@ -4,14 +4,14 @@
 			{{> profilephotos id=_id}}
 			<div class="row">
 				<div class="col-md-4">
-					{{> profilenavbar}}
+					{{> profilenavbar id=_id}}
 				</div>
 				<div class="col-md-8">
 					{{#if showTimeline}}
 						{{> timeline id=_id}}
 					{{/if}}
 					{{#if showFriends}}
-						<p>not yet implemented</p>
+						{{> friends id=_id}}
 					{{/if}}
 					{{#if showSettings}}
 						{{> settings}}

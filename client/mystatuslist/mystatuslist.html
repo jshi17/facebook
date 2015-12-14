@@ -1,20 +1,20 @@
 <template name="mystatuslist">
 	<div class="mystatuslist">
 		{{#each status}}
-			{{#if currentuser}}
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						{{ownername}}
-						<button class="delete">&times;</button>
-					</div>
-					<div class="panel-body">
-						<p>{{text}}</p>
-						{{#each image}}
-						<img src="{{url}}" class="thumbnail"/>
-						{{/each}}
-					</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					{{ownername}}
+					{{#if owned}}
+					<button class="delete">&times;</button>
+					{{/if}}
 				</div>
-			{{/if}}
+				<div class="panel-body">
+					<p>{{text}}</p>
+					{{#each image}}
+					<img src="{{url}}" class="thumbnail"/>
+					{{/each}}
+				</div>
+			</div>
 		{{/each}}
 	</div>
 </template>

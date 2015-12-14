@@ -6,9 +6,6 @@ Template.regnavbar.helpers({
 		} catch (err) {
 			// ignore safely, page hasn't started
 		}
-	},
-	'userid': function() {
-		return Meteor.userId();
 	}
 });
 

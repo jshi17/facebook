@@ -12,6 +12,11 @@ body {
 	color: #FFF;
 }  
 
+.btn-friend, .btn-friend:hover {
+  color: #000;
+  background-color: #FFF;
+}
+
 /* http://stackoverflow.com/questions/572768/styling-an-input-type-file-button */
 .image-upload {
     border: 1px solid #ccc;
@@ -135,6 +140,23 @@ input[type="file"] {
   margin-top: 10px;
 }
 
+/* SEARCH PAGE */
+
+.searchpage h1 {
+	font-size: 20px;
+}
+
+.searchpage ul li {
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+.searchpage p {
+  color: #000;
+  background-color: #FFF;
+}
+
+
 /* NEWSFEED */
 
 .newsfeed {
@@ -196,7 +218,7 @@ input[type="file"] {
   display: block;
 }
 
-.profile ul li .btn {
+.profilenavbar ul li .btn {
   width: 100%;
   background-color: #DCDCDC;
   padding: 30px;
@@ -206,11 +228,11 @@ input[type="file"] {
   border-bottom: 1px solid #D3D3D3;
 }
 
-.profile ul li a {
+.profilenavbar ul li a {
   color: #000;
 }
 
-.profile ul li .btn:hover {
+.profilenavbar ul li .btn:hover {
   background-color: #D3D3D3;
   color: #000;
   text-decoration: none;

@@ -2,8 +2,10 @@
 	<div class="profilenavbar">
 		<ul>
 			<li><a id="showTimeline" class="btn btn-default">Timeline</a></li>
+			{{#if owned}}
 			<li><a id="showFriends" class="btn btn-default">Friends</a></li>
 			<li><a id="showSettings" class="btn btn-default">Settings</a></li>
+			{{/if}}
 		</ul>
 	</div>
 </template>

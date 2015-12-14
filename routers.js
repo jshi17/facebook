@@ -13,37 +13,34 @@ Router.route('/newsfeed', {
 });
 
 Router.route('/profile', {
-	name: 'myprofile',
+	name: 'profile',
 	template: 'profile',
 	data: function() {
 		return Meteor.user();
 	}
 });
 
-Router.route('/profile/:id', {
-	name: 'profile',
-	template: 'profile',
-	data: function() {
-		return Meteor.users.findOne(this.params['id']);
-	}
+Router.route('/search', {
+	name: 'search',
+	template: 'searchpage'
 });
 
-Router.route('/timeline', {
-	name: 'timeline',
-	template: 'timeline',
-	layoutTemplate: 'profile'
-});
-
-Router.route('/settings', {
-	name: 'settings',
-	template: 'settings',
-	layoutTemplate: 'profile'
-});
-
-// Patrick helped me with this 
-// Router.route('/profile/_id', {
+// Router.route('/profile/:id', {
+// 	name: 'profile',
 // 	template: 'profile',
-// 	data: function(){
-// 		return Meteor.users.findONe({'username': this.param['user']});
+// 	data: function() {
+// 		return Meteor.users.findOne(this.params['id']);
 // 	}
-// })
+// });
+
+// Router.route('/timeline', {
+// 	name: 'timeline',
+// 	template: 'timeline',
+// 	layoutTemplate: 'profile'
+// });
+
+// Router.route('/settings', {
+// 	name: 'settings',
+// 	template: 'settings',
+// 	layoutTemplate: 'profile'
+// });
