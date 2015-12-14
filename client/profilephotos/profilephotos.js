@@ -1,7 +1,8 @@
 Template.profilephotos.helpers({
 	'name': function(){
+		console.log(this);
 		try {
-			return Meteor.user().profile.fullname;
+			return Meteor.users.findOne(this.id).profile.fullname;
 		} catch (err) {
 			// ignore
 		}

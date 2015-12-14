@@ -1,15 +1,21 @@
 <template name="profile">
-	{{_id}}
 	<div class="profile">
-		{{> regnavbar}}
 		<div class="container">
-			{{> profilephotos}}
+			{{> profilephotos id=_id}}
 			<div class="row">
 				<div class="col-md-4">
 					{{> profilenavbar}}
 				</div>
 				<div class="col-md-8">
-					{{> yield}}
+					{{#if showTimeline}}
+						{{> timeline id=_id}}
+					{{/if}}
+					{{#if showFriends}}
+						<p>not yet implemented</p>
+					{{/if}}
+					{{#if showSettings}}
+						{{> settings}}
+					{{/if}}
 				</div>
 			</div>
 		</div>
