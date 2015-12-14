@@ -1,5 +1,9 @@
 Template.newsfeed.helpers({
 	'name': function(){
-		return Meteor.user().profile.fullname;
+		try {
+			return Meteor.user().profile.fullname;
+		} catch (err) {
+			// ignore
+		}
 	}
 });

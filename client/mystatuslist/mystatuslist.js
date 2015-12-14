@@ -4,7 +4,7 @@ Template.mystatuslist.helpers({
 	},
 
 	'ownername': function(){
-		return Meteor.user.find({_id: this.owner}).profile.fullname;
+		return Meteor.users.findOne({_id: this.owner}).profile.fullname;
 	},
 
 	'currentuser': function(){
