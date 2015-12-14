@@ -109,7 +109,7 @@ input[type="file"] {
 	color: #FFF;
 }
 
-.rnav .col-md-7 {
+.rnav .col-md-8 {
 	padding-left: 0px;
 }
 
@@ -117,9 +117,19 @@ input[type="file"] {
 
 .searchbar input {
   line-height: 25px;
-  width: 85%;
+  width: 100%;
 }
 
+.searchbar .col-md-8 {
+  padding: 0;
+}
+
+.searchbar .btn {
+  float: left;
+  background-color: #3b5998;
+  height: 30px;
+  margin-top: 10px;
+}
 
 /* NEWSFEED */
 

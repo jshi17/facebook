@@ -1,11 +1,15 @@
-<!--done with help of http://meteorpad.com/pad/PDdgSnR4PZz9X3hWG/Search-->
 <template name="searchbar">
 	<div class="searchbar">
-		<input id="search" name="search" placeholder="Search people">
-<!-- 		<ul>
-			{{#each user}}
-				<li>{{fullname}}</li>
-			{{/each}}
-		</ul> -->
+		<div class="row">
+			<div class="col-md-8">
+				<input id="search" name="search" placeholder="Search people">
+			</div>
+			<div class="col-md-4">
+				<!--http://getbootstrap.com/components/-->
+				<button type="button" class="btn btn-default">
+					<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+				</button>
+			</div>
+		</div>
 	</div>
 </template>
