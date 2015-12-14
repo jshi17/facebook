@@ -4,11 +4,17 @@ Template.mystatuslist.helpers({
 	},
 
 	'ownername': function(){
+		return Meteor.user.find({_id: this.owner}).profile.fullname;
 	},
 
 	'currentuser': function(){
-		console.log(this.owner + " " + Meteor.userId());
 		return this.owner == Meteor.userId();
+	},
+
+	'image': function() {
+		return Images.find({
+			post: this._id
+		})
 	}
 });
 

@@ -17,7 +17,6 @@ Meteor.methods({
 			createdAt: new Date(),
 		});
 
-		console.log('uploading ' + statusID);
 		Images.update({
 			owner: Meteor.userId(),
 			post: 'temporary'

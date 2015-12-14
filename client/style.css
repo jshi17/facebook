@@ -240,6 +240,10 @@ input[type="file"] {
 	float: right;
 }
 
+.mystatuslist img {
+  width: 300px;
+}
+
 /* SETTINGS */
 
 .settings .row {
